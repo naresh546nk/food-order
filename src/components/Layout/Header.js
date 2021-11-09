@@ -8,9 +8,9 @@ import HeaderCartButton from './HeaderCartButton';
 const Header = props =>{
     return (
      <react.Fragment>
-         <header className={style.header}>
-             <h1>  React Meal</h1>
-             <HeaderCartButton/>
+         <header className={style.header}  >
+             <h1>Killer Pizza from Mars</h1>
+             <HeaderCartButton  onShowCart={props.onShowCart} onHideCart={props.onHideCart} />
          </header>
          
          <div className={style['main-image']}>
