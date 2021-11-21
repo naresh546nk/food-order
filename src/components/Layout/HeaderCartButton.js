@@ -4,6 +4,10 @@ import {useContext,useEffect,useState} from 'react'
 import CartContext from "../../store/cart-contex";
 
 const HeaderCartButton=props =>{
+
+
+
+
     const cartCtx=useContext(CartContext)
     const {items}=cartCtx;
     
@@ -27,7 +31,7 @@ const HeaderCartButton=props =>{
         return currNumber+item.amount;
     }, 0)
     return (
-        <button disabled={items.length<=0}  className={buttonClasss} onClick={props.onShowCart}>
+        <button disabled={items.length<=0}  className={buttonClasss} onClick={props.onShowCart} >
         <span className={style.icon}>
             <CartIcon/>
         </span>

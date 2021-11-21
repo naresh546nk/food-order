@@ -17,7 +17,7 @@ const MealItem =props =>{
 
 
     return(
-        <li className={style.meal}>
+        <div className={style.meal}>
             <div>
                 <div><h3>{props.meal.name}</h3></div>
                 <div className={style.description}>{props.meal.description}</div>
@@ -26,7 +26,7 @@ const MealItem =props =>{
             <div>
                 <MealIteamFrom   onAddToCart={addToCartHandler}/>
             </div>
-        </li>
+        </div>
     )
 }
 
